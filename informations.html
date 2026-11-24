@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Informations | DAKPRO ÉLITE</title>
+
+<meta name="description"
+content="Informations officielles de DAKPRO ÉLITE, présentation du Président David AGLIGNAMOU, vision africaine, engagements et contact.">
+
+<meta name="keywords"
+content="DAKPRO ÉLITE, David AGLIGNAMOU, informations, président, Bénin, Cotonou, Afrique, marketplace, emploi jeunes">
+
+<meta name="author"
+content="David AGLIGNAMOU - DAKPRO ÉLITE">
+
+<meta name="robots"
+content="index, follow">
+
+<link rel="canonical"
+href="https://dakproelite.com/informations.html">
+
+<meta name="theme-color"
+content="#080d19">
+
+<meta property="og:title"
+content="Informations | DAKPRO ÉLITE">
+
+<meta property="og:description"
+content="Découvrez DAKPRO ÉLITE, son Président David AGLIGNAMOU, sa vision pour l'Afrique et nos canaux officiels.">
+
+<meta property="og:image"
+content="https://i.postimg.cc/WpSc29mX/file-00000000ca8872438c17222eb828bc0c.png">
+
+<meta property="og:url"
+content="https://dakproelite.com/informations.html">
+
+<meta property="og:type"
+content="website">
+
+<link rel="icon"
+href="https://i.postimg.cc/WpSc29mX/file-00000000ca8872438c17222eb828bc0c.png">
+
+<style>
+
+/* ==============================
+   CONFIGURATION GENERALE
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080d19;
+    color: white;
+    line-height: 1.7;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* LOGO GRAVE FIXE EN ARRIERE-PLAN (FILIGRANE) */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: min(520px, 78vw);
+    height: min(520px, 78vw);
+    transform: translate(-50%, -50%);
+    background: url("https://i.postimg.cc/WpSc29mX/file-00000000ca8872438c17222eb828bc0c.png") center / contain no-repeat;
+    opacity: 0.055;
+    filter: grayscale(100%) contrast(125%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+header,
+main,
+footer,
+.whatsapp-float {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #f0cf65;
+    --blue: #087cff;
+    --dark: #080d19;
+    --card: #111b2d;
+    --white: #ffffff;
+}
+
+/* ==============================
+   ANIMATIONS AU DEFILEMENT (SCROLL)
+============================== */
+
+@keyframes heroFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-hero > * {
+    animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .page-hero > * {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    width: 100%;
+    background: rgba(12, 20, 36, 0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #26354c;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1250px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.45);
+    box-shadow: 0 0 18px rgba(212, 175, 55, 0.2);
+}
+
+.logo-text {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-text small {
+    display: block;
+    font-size: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+    transition: .3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
+
+nav a:hover,
+nav a.active-link {
+    color: var(--gold);
+}
+
+nav a:hover::after,
+nav a.active-link::after {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+    background: var(--gold);
+    color: #111;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+/* ==============================
+   PAGE HERO
+============================== */
+
+.page-hero {
+    padding: 80px 20px;
+    text-align: center;
+    background:
+    radial-gradient(circle at top center, rgba(212, 175, 55, 0.18), transparent 58%),
+    radial-gradient(circle at bottom right, rgba(8, 124, 255, 0.12), transparent 55%),
+    linear-gradient(rgba(8, 13, 25, 0.88), rgba(8, 13, 25, 0.96));
+    border-bottom: 1px solid #1e2e47;
+    z-index: 1;
+}
+
+.page-hero .hero-tag {
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.14);
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    color: var(--gold-light);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.page-hero h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    color: var(--gold);
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+.page-hero p {
+    max-width: 800px;
+    margin: auto;
+    color: #d4dce8;
+    font-size: 16.5px;
+}
+
+/* ==============================
+   SECTIONS & CARTES
+============================== */
+
+section {
+    padding: 72px 20px;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.section-title h2 {
+    color: var(--gold);
+    font-size: clamp(26px, 3.8vw, 34px);
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #b7c1d1;
+    max-width: 760px;
+    margin: auto;
+    font-size: 15.5px;
+}
+
+/* ==============================
+   CARTE PRESIDENT (PHOTO EN HAUT, DESCRIPTIONS EN BAS)
+============================== */
+
+.president-section {
+    background: rgba(12, 20, 36, 0.78);
+    border-bottom: 1px solid #1d2c44;
+}
+
+.president-card {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(22, 37, 64, 0.97) 0%, rgba(14, 24, 42, 0.99) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.45);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 46px rgba(0, 0, 0, 0.45);
+}
+
+.president-photo-top {
+    background:
+    radial-gradient(circle at center, rgba(212, 175, 55, 0.16), transparent 62%),
+    radial-gradient(circle at top right, rgba(8, 124, 255, 0.22), transparent 68%),
+    linear-gradient(180deg, rgba(17, 30, 52, 0.96), rgba(9, 16, 30, 0.99));
+    padding: 36px 24px 26px;
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.president-photo-frame {
+    width: 230px;
+    height: 265px;
+    margin: auto;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 3px solid var(--gold);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.5), 0 0 24px rgba(212, 175, 55, 0.18);
+    background: #0b1324;
+}
+
+.president-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.president-badge-title {
+    margin-top: 18px;
+    display: inline-block;
+    background: rgba(212, 175, 55, 0.16);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    color: var(--gold-light);
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+
+.president-descriptions-bottom {
+    padding: 34px 30px 36px;
+    text-align: center;
+}
+
+.president-descriptions-bottom h3 {
+    color: var(--gold);
+    font-size: 27px;
+    margin-bottom: 6px;
+}
+
+.president-subtitle {
+    color: #8cc2ff;
+    font-weight: bold;
+    font-size: 14.5px;
+    margin-bottom: 22px;
+}
+
+.president-descriptions-bottom p {
+    color: #d5deeb;
+    font-size: 15.5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.president-descriptions-bottom p:last-of-type {
+    margin-bottom: 0;
+}
+
+.president-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid #263854;
+}
+
+.highlight-chip {
+    background: rgba(8, 13, 25, 0.8);
+    border: 1px solid rgba(212, 175, 55, 0.32);
+    color: #ebf1fa;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+/* ==============================
+   REPERES, ENGAGEMENTS & VALEURS
+============================== */
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.info-card {
+    background: linear-gradient(180deg, rgba(20, 33, 56, 0.94) 0%, rgba(16, 26, 44, 0.97) 100%);
+    border: 1px solid #24354e;
+    border-radius: 14px;
+    padding: 28px 24px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.38);
+}
+
+.card-index {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--gold-light);
+    background: rgba(212, 175, 55, 0.14);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+}
+
+.info-card h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+.info-card p {
+    color: #c8d2e2;
+    font-size: 14.5px;
+}
+
+.info-card a.card-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: var(--gold-light);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.info-card a.card-link:hover {
+    text-decoration: underline;
+}
+
+.commitments-section {
+    background: rgba(10, 17, 31, 0.85);
+    border-top: 1px solid #1c2b42;
+    border-bottom: 1px solid #1c2b42;
+}
+
+/* ==============================
+   FAQ ACCORDEON
+============================== */
+
+.faq-section {
+    background: rgba(16, 26, 44, 0.88);
+    border-top: 1px solid #1d2c44;
+    border-bottom: 1px solid #1d2c44;
+}
+
+.faq-list {
+    max-width: 860px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.faq-item {
+    background: rgba(17, 27, 45, 0.95);
+    border: 1px solid #2b3f5e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 18px 22px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    transition: color .25s ease;
+}
+
+.faq-question:hover,
+.faq-question[aria-expanded="true"] {
+    color: var(--gold);
+}
+
+.faq-icon {
+    font-size: 20px;
+    line-height: 1;
+    color: var(--gold);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    background: rgba(8, 13, 25, 0.55);
+}
+
+.faq-answer p {
+    padding: 0 22px 18px;
+    color: #cbd5e6;
+    font-size: 14.5px;
+}
+
+/* ==============================
+   FORMULAIRE CONTACT
+============================== */
+
+.contact-form-section {
+    background: rgba(12, 20, 36, 0.9);
+}
+
+.contact-form {
+    max-width: 720px;
+    margin: auto;
+    background: rgba(17, 27, 45, 0.95);
+    border: 1px solid #2b3f5e;
+    border-radius: 14px;
+    padding: 32px 26px;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.32);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: var(--gold);
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 1px solid #334866;
+    background: #09101f;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color .25s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+}
+
+.form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.form-feedback {
+    margin-top: 14px;
+    font-size: 14px;
+    min-height: 20px;
+    text-align: center;
+}
+
+.form-feedback.error {
+    color: #ff7b7b;
+}
+
+.form-feedback.success {
+    color: #6ee7a8;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 25px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: none;
+    transition: transform .3s ease, filter .3s ease;
+}
+
+.btn-gold {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    color: #111;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+}
+
+/* ==============================
+   RESEAUX SOCIAUX
+============================== */
+
+.social-section {
+    background: rgba(12, 20, 36, 0.94);
+    text-align: center;
+    border-top: 1px solid #1e2e47;
+}
+
+.social-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.social-button {
+    min-width: 170px;
+    padding: 15px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform .3s ease, box-shadow .3s ease, filter .3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+.social-button svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.social-button:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.08);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
+}
+
+.tiktok {
+    background: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    color: #ffffff;
+}
+
+.youtube {
+    background: #e62117;
+    color: #ffffff;
+}
+
+.facebook {
+    background: #1877f2;
+    color: #ffffff;
+}
+
+.instagram {
+    background:
+    linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+    color: #ffffff;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+    color: #082212;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background: #050912;
+    border-top: 1px solid #29354a;
+    padding: 45px 20px 18px;
+    z-index: 1;
+}
+
+.footer-content {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 30px;
+}
+
+.footer-content h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    color: #b7c1d1;
+    font-size: 14px;
+}
+
+.footer-content a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    color: #c4cede;
+    font-size: 14px;
+    transition: color .25s ease;
+}
+
+.footer-content a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 18px;
+    border-top: 1px solid #29354a;
+    color: #aab4c4;
+    font-size: 13px;
+}
+
+/* ==============================
+   WHATSAPP FLOTTANT
+============================== */
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media(max-width: 850px) {
+    .menu-button {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: #0c1424;
+        padding: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 1px solid #29354a;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
+@media(max-width: 500px) {
+    .logo-text {
+        font-size: 16px;
+    }
+
+    .logo-area img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .president-descriptions-bottom {
+        padding: 24px 18px 28px;
+    }
+
+    .social-button {
+        width: 100%;
+    }
+}
+
+</style>
+
+<script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DAKPRO ÉLITE",
+  "url": "https://dakproelite.com/",
+  "logo": "https://i.postimg.cc/WpSc29mX/file-00000000ca8872438c17222eb828bc0c.png",
+  "founder": {
+    "@type": "Person",
+    "name": "David AGLIGNAMOU"
+  },
+  "description": "Marketplace internationale de commerce, d'opportunités et de vente en ligne au service de l'Afrique.",
+  "email": "contact@dakproelite.com",
+  "sameAs": [
+    "https://www.tiktok.com/@dak.pro.elite",
+    "https://youtube.com/@dakproelite",
+    "https://www.facebook.com/profile.php?id=61596693607293",
+    "https://www.instagram.com/dakproeoelite/"
+  ]
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="header-container">
+
+<div class="logo-area">
+
+<img
+src="https://i.postimg.cc/WpSc29mX/file-00000000ca8872438c17222eb828bc0c.png"
+alt="Logo officiel DAKPRO ÉLITE">
+
+<div class="logo-text">
+
+DAKPRO ÉLITE
+
+<small>MARKETPLACE INTERNATIONALE</small>
+
+</div>
+
+</div>
+
+<button
+class="menu-button"
+id="menuButton"
+aria-label="Ouvrir le menu"
+aria-expanded="false">
+
+☰
+
+</button>
+
+<nav id="mainNav">
+
+<a href="index.html">Accueil</a>
+
+<a href="histoire.html">Notre histoire</a>
+
+<a href="informations.html" class="active-link">Informations</a>
+
+<a href="formation.html">Formation</a>
+
+<a href="index.html#dropshipping">Produits</a>
+
+<a href="devenir-vendeur.html">Devenir vendeur</a>
+
+<a href="#contact-form-section">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+<span class="hero-tag">PRÉSENTATION OFFICIELLE • VISION &amp; REPÈRES</span>
+
+<h1>Informations &amp; Direction</h1>
+
+<p>
+Découvrez la direction de DAKPRO ÉLITE, notre ambition pour l'Afrique, les opportunités offertes aux jeunes et aux vendeurs, ainsi que nos canaux d'assistance officiels.
+</p>
+
+</section>
+
+<!-- PRESIDENT : PHOTO EN HAUT, DESCRIPTIONS EN BAS -->
+
+<section class="president-section" id="president">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Le Président de DAKPRO ÉLITE</h2>
+
+<p>Une direction engagée au service de l'entrepreneuriat, de l'emploi et de la réussite en Afrique.</p>
+
+</div>
+
+<div class="president-card reveal">
+
+<div class="president-photo-top">
+
+<div class="president-photo-frame">
+<img
+src="https://i.postimg.cc/mD7vQZTM/file-000000002be081f4814d8f34591b54ef.png"
+alt="Photo officielle de David AGLIGNAMOU, Président de DAKPRO ÉLITE">
+</div>
+
+<div class="president-badge-title">PRÉSIDENT FONDATEUR • DAKPRO ÉLITE</div>
+
+</div>
+
+<div class="president-descriptions-bottom">
+
+<h3>David AGLIGNAMOU</h3>
+
+<div class="president-subtitle">Président &amp; Fondateur de DAKPRO ÉLITE</div>
+
+<p>
+<strong>David AGLIGNAMOU</strong> est le Président et fondateur de <strong>DAKPRO ÉLITE</strong>. Né le <strong>13 septembre 1989</strong> à <strong>Cotonou</strong>, au <strong>Bénin</strong>, il a suivi son parcours scolaire et académique au <strong>Bénin</strong> avant de consacrer son énergie à la création d'une plateforme moderne pensée pour l'Afrique.
+</p>
+
+<p>
+Animé par la volonté d'aider les jeunes et toutes les personnes en quête d'avenir à trouver du travail et à sortir des difficultés du quotidien, il a développé <strong>DAKPRO ÉLITE</strong> afin d'offrir un espace d'achat et de vente accessible à tous, même sans boutique physique ni gros capital de départ.
+</p>
+
+<p>
+Sa démarche repose sur la rigueur, la proximité avec la communauté, l'accompagnement par la formation et la construction d'une marketplace fiable, dynamique et tournée vers l'avenir de l'Afrique.
+</p>
+
+<div class="president-highlights">
+<span class="highlight-chip">David AGLIGNAMOU</span>
+<span class="highlight-chip">Né le 13 septembre 1989 à Cotonou</span>
+<span class="highlight-chip">Études au Bénin</span>
+<span class="highlight-chip">Vision : Afrique &amp; Opportunités</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REPERES ESSENTIELS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Ce qui fait la force de DAKPRO ÉLITE</h2>
+
+<p>Des solutions concrètes conçues pour faciliter l'achat, la vente et l'évolution professionnelle.</p>
+
+</div>
+
+<div class="info-grid">
+
+<div class="info-card reveal">
+<span class="card-index">01 • ACHATS &amp; VISIBILITÉ</span>
+<h3>Une marketplace ouverte à l'Afrique</h3>
+<p>
+Un espace centralisé où les acheteurs découvrent des produits variés en toute simplicité et où les vendeurs développent leur visibilité sur un marché en pleine croissance.
+</p>
+<a class="card-link" href="https://marketplace.acheteur.dakproelite.com/" target="_blank" rel="noopener noreferrer">Visiter la marketplace acheteur →</a>
+</div>
+
+<div class="info-card reveal">
+<span class="card-index">02 • DÉMARRAGE ACCESSIBLE</span>
+<h3>Accessibilité sans boutique lourde</h3>
+<p>
+Conçue pour permettre à chacun de démarrer progressivement, d'apprendre les codes du commerce numérique et de bâtir une activité rentable sans les charges d'un grand local.
+</p>
+<a class="card-link" href="https://vendeur.dakproelite.com/" target="_blank" rel="noopener noreferrer">Découvrir l'espace vendeur →</a>
+</div>
+
+<div class="info-card reveal">
+<span class="card-index">03 • COMPÉTENCES &amp; MÉTHODE</span>
+<h3>Formation &amp; montée en compétence</h3>
+<p>
+Parce que la réussite durable passe par l'apprentissage, DAKPRO ÉLITE met l'accent sur des repères pratiques, l'accompagnement et le développement des compétences utiles.
+</p>
+<a class="card-link" href="formation.html">Accéder à la formation →</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ENGAGEMENTS PROFONDS -->
+
+<section class="commitments-section" id="engagements">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Nos engagements pour la communauté</h2>
+
+<p>Des fondations solides pour transformer l'ambition en opportunités concrètes et durables.</p>
+
+</div>
+
+<div class="info-grid">
+
+<div class="info-card reveal">
+<span class="card-index">EMPLOI &amp; AUTONOMIE</span>
+<h3>Créer de vraies perspectives</h3>
+<p>
+Offrir aux jeunes et aux personnes en recherche de revenus un cadre structuré pour entreprendre, gagner en expérience et construire leur indépendance étape par étape.
+</p>
+</div>
+
+<div class="info-card reveal">
+<span class="card-index">SIMPLICITÉ &amp; CLARTÉ</span>
+<h3>Un parcours compréhensible par tous</h3>
+<p>
+Rendre l'accès au commerce en ligne clair, fluide et rassurant, afin que chaque utilisateur sache où aller, comment s'informer et comment évoluer.
+</p>
+</div>
+
+<div class="info-card reveal">
+<span class="card-index">PROXIMITÉ &amp; ÉCOUTE</span>
+<h3>Un accompagnement humain et réactif</h3>
+<p>
+Maintenir un lien direct avec la communauté via nos canaux officiels afin d'orienter les membres, répondre aux questions et soutenir leur progression.
+</p>
+</div>
+
+<div class="info-card reveal">
+<span class="card-index">AMBITION PANAFRICAINE</span>
+<h3>Grandir ensemble sur le continent</h3>
+<p>
+Bâtir une dynamique portée par les réalités et les talents d'Afrique, ouverte aux échanges et tournée vers l'excellence sur le long terme.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq-section" id="faq">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Questions fréquentes (FAQ)</h2>
+
+<p>Réponses rapides aux questions les plus courantes de notre communauté.</p>
+
+</div>
+
+<div class="faq-list">
+
+<div class="faq-item reveal">
+<button type="button" class="faq-question" aria-expanded="false">
+<span>Comment acheter ou demander des informations sur un produit ?</span>
+<span class="faq-icon" aria-hidden="true">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Vous pouvez consulter la section Produits sur l'accueil, visiter notre marketplace acheteur ou contacter directement notre équipe via le formulaire ci-dessous ou par WhatsApp au +229 01 97 45 53 09.
+</p>
+</div>
+</div>
+
+<div class="faq-item reveal">
+<button type="button" class="faq-question" aria-expanded="false">
+<span>Comment devenir vendeur sur DAKPRO ÉLITE ?</span>
+<span class="faq-icon" aria-hidden="true">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Rendez-vous sur la page « Devenir vendeur » depuis le menu ou sur l'espace vendeur pour découvrir les étapes et soumettre votre demande d'intégration.
+</p>
+</div>
+</div>
+
+<div class="faq-item reveal">
+<button type="button" class="faq-question" aria-expanded="false">
+<span>Où accéder aux programmes de formation ?</span>
+<span class="faq-icon" aria-hidden="true">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Cliquez sur « Formation » dans le menu principal pour consulter les modules et contacter l'équipe pour vous inscrire.
+</p>
+</div>
+</div>
+
+<div class="faq-item reveal">
+<button type="button" class="faq-question" aria-expanded="false">
+<span>Qui est à l'origine de la vision de DAKPRO ÉLITE ?</span>
+<span class="faq-icon" aria-hidden="true">+</span>
+</button>
+<div class="faq-answer">
+<p>
+DAKPRO ÉLITE a été initié et développé par son Président et fondateur David AGLIGNAMOU, né le 13 septembre 1989 à Cotonou au Bénin, avec une vision tournée vers toute l'Afrique.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULAIRE CONTACT -->
+
+<section class="contact-form-section" id="contact-form-section">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Envoyer un message direct</h2>
+
+<p>Remplissez ce formulaire pour ouvrir une discussion préparée sur WhatsApp.</p>
+
+</div>
+
+<form id="contactForm" class="contact-form reveal" novalidate>
+
+<div class="form-group">
+<label for="name">Nom complet</label>
+<input type="text" id="name" name="name" placeholder="Votre nom ou prénom" required>
+</div>
+
+<div class="form-group">
+<label for="email">Adresse email</label>
+<input type="email" id="email" name="email" placeholder="votre@email.com" required>
+</div>
+
+<div class="form-group">
+<label for="subject">Objet</label>
+<input type="text" id="subject" name="subject" placeholder="Ex. : Informations, partenariat, vendeur, formation..." required>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+</div>
+
+<button type="submit" class="btn btn-gold">
+Envoyer via WhatsApp
+</button>
+
+<p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- RESEAUX SOCIAUX -->
+
+<section class="social-section">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+<h2>Suivez DAKPRO ÉLITE</h2>
+
+<p>Retrouvez-nous sur nos réseaux sociaux officiels.</p>
+
+</div>
+
+<div class="social-grid">
+
+<!-- TikTok -->
+<a
+class="social-button tiktok"
+href="https://www.tiktok.com/@dak.pro.elite"
+target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+</svg>
+<span>TikTok</span>
+</a>
+
+<!-- YouTube -->
+<a
+class="social-button youtube"
+href="https://youtube.com/@dakproelite"
+target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+</svg>
+<span>YouTube</span>
+</a>
+
+<!-- Facebook -->
+<a
+class="social-button facebook"
+href="https://www.facebook.com/profile.php?id=61596693607293"
+target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+</svg>
+<span>Facebook</span>
+</a>
+
+<!-- Instagram -->
+<a
+class="social-button instagram"
+href="https://www.instagram.com/dakproeoelite/"
+target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+</svg>
+<span>Instagram</span>
+</a>
+
+<!-- WhatsApp -->
+<a
+class="social-button whatsapp-btn"
+href="https://wa.me/2290197455309?text=Bonjour%20DAKPRO%20ELITE%2C%20je%20souhaite%20discuter%20avec%20vous."
+target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+<path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.54 1.74 6.52L3 29l6.68-1.72A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm7.54 18.42c-.32.9-1.86 1.72-2.56 1.82-.66.1-1.5.14-2.42-.15-.56-.18-1.28-.42-2.2-.82-3.88-1.68-6.41-5.6-6.61-5.86-.2-.26-1.58-2.1-1.58-4.01 0-1.91 1-2.85 1.36-3.24.36-.39.78-.49 1.04-.49.26 0 .52.01.75.02.24.01.56-.09.88.67.32.78 1.1 2.69 1.2 2.89.1.2.16.43.03.69-.13.26-.2.43-.39.66-.2.23-.41.52-.59.7-.2.2-.4.41-.17.81.23.39 1.02 1.68 2.19 2.72 1.5 1.34 2.77 1.76 3.16 1.96.39.2.62.16.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.52-.33.88-.2.36.13 2.29 1.08 2.68 1.28.39.2.65.29.75.46.1.16.1.95-.22 1.85z"/>
+</svg>
+<span>WhatsApp</span>
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+<h3>DAKPRO ÉLITE</h3>
+<p>Marketplace internationale de commerce et de vente en ligne présidée par David AGLIGNAMOU.</p>
+</div>
+
+<div>
+<h3>Navigation</h3>
+<a href="index.html">Accueil</a>
+<a href="histoire.html">Notre histoire</a>
+<a href="informations.html">Informations</a>
+<a href="formation.html">Formation</a>
+<a href="devenir-vendeur.html">Devenir vendeur</a>
+</div>
+
+<div>
+<h3>Nos réseaux</h3>
+<a href="https://www.tiktok.com/@dak.pro.elite" target="_blank" rel="noopener noreferrer">TikTok</a>
+<a href="https://youtube.com/@dakproelite" target="_blank" rel="noopener noreferrer">YouTube</a>
+<a href="https://www.facebook.com/profile.php?id=61596693607293" target="_blank" rel="noopener noreferrer">Facebook</a>
+<a href="https://www.instagram.com/dakproeoelite/" target="_blank" rel="noopener noreferrer">Instagram</a>
+<a href="https://wa.me/2290197455309" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+</div>
+
+<div>
+<h3>Contact</h3>
+<a href="https://wa.me/2290197455309" target="_blank" rel="noopener noreferrer">WhatsApp 1 : +229 01 97 45 53 09</a>
+<a href="https://wa.me/2290141660718" target="_blank" rel="noopener noreferrer">WhatsApp 2 : +229 01 41 66 07 18</a>
+<a href="mailto:contact@dakproelite.com">Email : contact@dakproelite.com</a>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+© 2026 DAKPRO ÉLITE — Marketplace Internationale — Tous droits réservés.
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOTTANT -->
+
+<a
+class="whatsapp-float"
+href="https://wa.me/2290197455309"
+target="_blank"
+rel="noopener noreferrer"
+aria-label="Contacter DAKPRO ÉLITE sur WhatsApp">
+<svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+<path d="M16 3C8.82 3 3 8.82 3 16c0 2.3.6 4.54 1.74 6.52L3 29l6.68-1.72A12.93 12.93 0 0 0 16 29c7.18 0 13-5.82 13-13S23.18 3 16 3zm7.54 18.42c-.32.9-1.86 1.72-2.56 1.82-.66.1-1.5.14-2.42-.15-.56-.18-1.28-.42-2.2-.82-3.88-1.68-6.41-5.6-6.61-5.86-.2-.26-1.58-2.1-1.58-4.01 0-1.91 1-2.85 1.36-3.24.36-.39.78-.49 1.04-.49.26 0 .52.01.75.02.24.01.56-.09.88.67.32.78 1.1 2.69 1.2 2.89.1.2.16.43.03.69-.13.26-.2.43-.39.66-.2.23-.41.52-.59.7-.2.2-.4.41-.17.81.23.39 1.02 1.68 2.19 2.72 1.5 1.34 2.77 1.76 3.16 1.96.39.2.62.16.85-.1.23-.26.98-1.14 1.24-1.53.26-.39.52-.33.88-.2.36.13 2.29 1.08 2.68 1.28.39.2.65.29.75.46.1.16.1.95-.22 1.85z"/>
+</svg>
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* MENU MOBILE */
+
+const menuButton =
+document.getElementById("menuButton");
+
+const mainNav =
+document.getElementById("mainNav");
+
+menuButton.addEventListener("click", () => {
+
+    mainNav.classList.toggle("active");
+
+    const expanded =
+    mainNav.classList.contains("active");
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        expanded
+    );
+
+});
+
+/* FERMER MENU APRES CLIC */
+
+document.querySelectorAll("#mainNav a")
+.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mainNav.classList.remove("active");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    });
+
+});
+
+/* ANIMATIONS AU DEFILEMENT (SCROLL REVEAL) */
+
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+
+    const observer = new IntersectionObserver((entries, obs) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("is-visible");
+                obs.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -30px 0px"
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+
+} else {
+
+    revealElements.forEach(el => el.classList.add("is-visible"));
+
+}
+
+/* =========================================================
+   ACCORDEON FAQ
+   ========================================================= */
+
+document.querySelectorAll(".faq-question").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+
+        if (!isOpen) {
+
+            button.setAttribute("aria-expanded", "true");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            if (icon) icon.textContent = "−";
+
+        } else {
+
+            button.setAttribute("aria-expanded", "false");
+            answer.style.maxHeight = null;
+            if (icon) icon.textContent = "+";
+
+        }
+
+    });
+
+});
+
+/* =========================================================
+   FORMULAIRE CONTACT
+   ========================================================= */
+
+const contactForm =
+document.getElementById("contactForm");
+
+const formFeedback =
+document.getElementById("formFeedback");
+
+contactForm.addEventListener(
+"submit",
+event => {
+
+event.preventDefault();
+
+const name =
+document
+.getElementById("name")
+.value
+.trim();
+
+const email =
+document
+.getElementById("email")
+.value
+.trim();
+
+const subject =
+document
+.getElementById("subject")
+.value
+.trim();
+
+const message =
+document
+.getElementById("message")
+.value
+.trim();
+
+if (
+!name ||
+!email ||
+!subject ||
+!message
+) {
+
+formFeedback.className = "form-feedback error";
+formFeedback.textContent = "Veuillez remplir tous les champs avant l'envoi.";
+
+return;
+
+}
+
+formFeedback.className = "form-feedback success";
+formFeedback.textContent = "Ouverture de WhatsApp avec votre message préparé...";
+
+const whatsappMessage =
+`Bonjour DAKPRO ÉLITE.%0A%0A` +
+`Nom : ${encodeURIComponent(name)}%0A` +
+`Email : ${encodeURIComponent(email)}%0A` +
+`Objet : ${encodeURIComponent(subject)}%0A%0A` +
+`${encodeURIComponent(message)}`;
+
+window.open(
+`https://wa.me/2290197455309?text=${whatsappMessage}`,
+"_blank",
+"noopener,noreferrer"
+);
+
+}
+);
+
+/* =========================================================
+   ANNEE AUTOMATIQUE
+   ========================================================= */
+
+document
+.querySelector(".footer-bottom")
+.innerHTML =
+`© ${new Date().getFullYear()} DAKPRO ÉLITE — Marketplace Internationale — Tous droits réservés.`;
+
+/* =========================================================
+   PROTECTION DES LIENS EXTERNES
+   ========================================================= */
+
+document
+.querySelectorAll('a[target="_blank"]')
+.forEach(link => {
+
+link.setAttribute(
+"rel",
+"noopener noreferrer"
+);
+
+});
+
+</script>
+
+</body>
+
+</html>
